@@ -11,7 +11,7 @@ class CashRegister
   
   def add_item(title, price, quantity = 1)
     @total += price * quantity
-    self.list.fill(title, 0)
+    self.list.fill(title, list.size, quantity)
     binding.pry
   end 
   
