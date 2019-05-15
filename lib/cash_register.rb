@@ -18,7 +18,7 @@ class CashRegister
     @total -= @total/(@discount*0.01)
     
     if @discount > 0  
-      return "After the discount, the total comes to $#{total.to_i}."
+      return "After the discount, the total comes to $#{@total.to_i}."
     else 
       return "There is no disount to apply"
     end 
