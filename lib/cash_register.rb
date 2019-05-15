@@ -7,11 +7,13 @@ class CashRegister
     @total = 0
     @discount = discount
     @list = []
+    @last_transaction = 0
   end
   
   def add_item(title, price, quantity = 1)
     @total += price * quantity
     self.list.fill(title, quantity)
+    @last_transaction = price
   end 
   
   def apply_discount()
@@ -26,10 +28,11 @@ class CashRegister
   
   def items
     #returns an array containing all items that have been added
-    #return self
+    return @list 
   end 
   
   def void_last_transaction
     #subtract last transaction from total 
+    @total -= @last_transaction
   end
 end 
