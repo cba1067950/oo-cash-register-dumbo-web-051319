@@ -12,11 +12,10 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     @total += price * quantity
     self.list.fill(title, quantity)
-    #binding.pry
   end 
   
   def apply_discount()
-    #@total = @total/@discount - @total
+    @total = @total/@discount - @total
     
     if @discount == 0 
       return "Error message"
