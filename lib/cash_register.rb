@@ -13,8 +13,9 @@ class CashRegister
     
   end 
   
-  def apply_discount
-    
+  def apply_discount()
+    #@total = @total/@discount - @total
+    return "Success"
   end 
   
   def items
