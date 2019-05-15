@@ -28,7 +28,7 @@ class CashRegister
   
   def items
     #returns an array containing all items that have been added
-    return @list 
+    @list 
   end 
   
   def void_last_transaction
