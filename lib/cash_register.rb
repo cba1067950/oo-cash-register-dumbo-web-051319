@@ -3,9 +3,10 @@ require 'pry'
 class CashRegister
   attr_accessor :total, :discount
   
-  def initialize(discount) 
+  def initialize(discount = 20) 
     @total = 0
-    @discount = discount || 20
+    @discount = discount
+    (/abc/)
     # binding.pry 
   end
   
