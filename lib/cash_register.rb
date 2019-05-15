@@ -23,6 +23,7 @@ class CashRegister
   end 
   
   def items
+    #returns an array containing all items that have been added
     #return self
   end 
   
