@@ -15,7 +15,7 @@ class CashRegister
   end 
   
   def apply_discount()
-    @total = @total/@discount - @total
+    @total =- @total/(@discount*0.01)
     
     if @discount == 0 
       return "Error message"
